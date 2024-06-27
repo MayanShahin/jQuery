@@ -1,0 +1,166 @@
+ /* GLOBAL */
+ :root{
+    --main_color:#AA0000;}
+/* ----------------------------------- */
+
+ /* START HOME  SECTION*/
+#home {
+    background-image: url(../images/events-heavenly-header.jpg);
+    background-size: cover;
+    background-position: center; 
+    color: white;
+}
+#home h2{
+    font-size: 3rem;
+}
+#home span{
+    align-self: flex-start;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transform: translateY(700%);
+}
+#home .navBar{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -220.562px;
+    z-index: 1;
+    display: flex;
+} 
+#home .navBar ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-right: 6rem;
+    margin: 1rem 0;
+    color: white;
+    transition: all 0.5s;
+}
+#home .closeBtn{
+    align-self:flex-end;
+    padding-right: 1rem;
+    margin: 1rem 0;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: white;
+}
+#home .navBar ul li a:hover , #home .navBar .closeBtn:hover{
+    color: var(--main_color);
+}
+/* END HOME SECTION */
+
+/* START ACCORDION SECTION */
+#accordion{
+    margin: 5rem 0;
+}
+#accordion .singer{
+    width: 50%;
+}
+#accordion .singer h3{
+    background-color: #fa8a8a;
+    cursor: pointer;
+    padding: 5rem;
+}
+#accordion .singer-content{
+    background-color: rgb(195, 192, 192);
+}
+/* END ACCORDION SECTION */
+
+/* START COUNT SECTION */
+#count{
+    background-color: #ff9d00;
+    background-image: url(../images/invitation-2508607__340.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center; 
+}
+#count .time{
+    padding: 50px;
+    border: 1px solid white;
+    font-size: 30px;
+    font-weight: 500;
+}
+.overlay{
+    position: absolute;
+    background-color: rgba(214, 46, 51, 0.6);;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+/* END COUNT SECTION */
+
+/* START FOOTER SECTION */
+#footer {
+    color: #777;
+}
+#footer .footer-head {
+    padding-top: 100px;
+}
+#footer h2 {
+    color: rgb(58, 57, 57);
+    font-weight: 700;
+    font-size: 2rem;
+}
+#footer h3{
+    color: rgb(58, 57, 57);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+#footer .contact-details{
+    margin-bottom: 1.5rem;
+}
+#footer .contact-details i {
+    padding-right: 10px; 
+}
+#footer .contact-details .email{
+    color: var(--main_color);
+    cursor: pointer;
+}
+#footer .icon-item {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    transition: all 0.5s;
+    margin: 0 10px 10px 0;
+    cursor: pointer;
+}
+#footer .icon-item:hover {
+    background-color: var(--main_color);
+    color: white;
+}
+textarea {
+    height: 200px;
+}
+.send-btn {
+    display: block;
+    border: 1px solid var(--main_color);
+    color: white;
+    background-color: var(--main_color);
+    border-radius: 0;
+    width: 30%;
+    height: 13%;
+}
+#footer #num{
+    color: var(--main_color);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+textarea+p{
+    color: rgb(58, 57, 57);
+}
+/* END FOOTER SECTION */
+/* MEDIA QUERY */
+@media screen and (max-width: 600px) {
+    #count .col-sm-3 {
+      width: 25%;
+    }
+    #accordion .singer .title{
+        text-align: center;
+        padding: 0;
+    }
+  }
